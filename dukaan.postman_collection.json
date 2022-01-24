@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "6af92b1e-7501-43b3-8de3-3e4b6c1d1618",
+		"name": "dukaan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "192.168.1.7:8000/account/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Satyam Anand\",\n    \"phNumber\": 9513868175,\n    \"otp\": 4426\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.7:8000/account/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"account",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/account/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.1.7:8000/account/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"account",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/createstore/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6Ijk1MTM4NjgxNzUiLCJvdHAiOiI0NDI2In0.8GiYE6UP-3WZxqVMaOe2sgOpqZzIYdwUNTOTEO9IZEs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6Ijk1MTM4NjgxNzUiLCJvdHAiOiI0NDI2In0.8GiYE6UP-3WZxqVMaOe2sgOpqZzIYdwUNTOTEO9IZEs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"storeName\": \"MyDukaan\",\n    \"address\": \"Deoghar\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.7:8000/createstore/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6Ijk1MTM4NjgxNzUiLCJvdHAiOiI0NDI2In0.8GiYE6UP-3WZxqVMaOe2sgOpqZzIYdwUNTOTEO9IZEs",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"createstore",
+						""
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6Ijk1MTM4NjgxNzUiLCJvdHAiOiI0NDI2In0.8GiYE6UP-3WZxqVMaOe2sgOpqZzIYdwUNTOTEO9IZEs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/viewstores/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.1.7:8000/viewstores/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"viewstores",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/storedisplay/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"URL\": \"https://MyDukhDukaan.com/0rstKED_bvA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.7:8000/storedisplay/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"storedisplay",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/placeorder/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cart_id\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.7:8000/placeorder/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"placeorder",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/cart/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"product_ID\": 4,\n    \"store_ID\": 1,\n    \"customer_ID\": 1,\n    \"quantity\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.7:8000/cart/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"cart",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/order/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"product_ID\": 4,\n    \"store_ID\": 1,\n    \"customer_ID\": 1,\n    \"quantity\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.7:8000/order/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"order",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/customer/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.1.7:8000/customer/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"customer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/customer/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phNumber\": 9513868156,\n    \"otp\": 4426\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.7:8000/customer/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"customer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/category/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_ID\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.7:8000/category/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/product/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.1.7:8000/product/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.1.7:8000/product/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": [
+								"/home/satyam/Pictures/Screenshot from 2022-01-24 00-13-34.png",
+								"/home/satyam/Pictures/Screenshot from 2022-01-23 17-56-12.png"
+							]
+						},
+						{
+							"key": "productName",
+							"value": "test4",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is a test object4",
+							"type": "text"
+						},
+						{
+							"key": "MRP",
+							"value": "504",
+							"type": "text"
+						},
+						{
+							"key": "SP",
+							"value": "54",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "temp3",
+							"type": "text"
+						},
+						{
+							"key": "store_ID",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.7:8000/product/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
