@@ -1,5 +1,7 @@
 # DukaanBackend
 
+Solution for https://github.com/TeamDukaan/backend-assignment
+
 Install Django using ```pip install Django```
 and clone the repo
 
